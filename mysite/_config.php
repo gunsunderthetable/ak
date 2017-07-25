@@ -1,11 +1,11 @@
 <?php
 
-global $environment, $databaseConfig, $project, $password;
+global $environment, $databaseConfig, $project, $admin $password;
 
 // Set the site locale
 i18n::set_locale('en_GB');
 
-Security::setDefaultAdmin('admin', $password);
+Security::setDefaultAdmin($admin, $password);
 
 //extend config
 DataObject::add_extension('SiteConfig', 'SiteConfigExtension');
