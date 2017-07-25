@@ -1,0 +1,52 @@
+<?php
+class Page extends SiteTree {
+
+        public static $db = array(
+            'SideBarText' => 'Text'
+        );
+        
+        public static $has_one = array(
+            'WidgetArea' => 'WidgetArea',
+        );
+            
+        function getImageGalleries() {
+            if($galleries=ImageGallery::get()){
+                return $galleries;
+            }
+        }        
+
+        function getGalleryTop() {
+            $gallery = GalleryTopPage::get();
+            return $gallery->first();
+        }
+
+        function getBlogHolder() {
+            $blogHolder = BlogHolder::get();
+            return $blogHolder->first();
+        }
+
+        function getCMSFields() {
+            $fields = parent::getCMSFields();
+            # Widgets ###
+            $fields->addFieldToTab('Root.Content.Widgets', new WidgetAreaEditor('WidgetArea'));
+            $fields->addFieldToTab('Root.Content.SideBar', new TextField('SideBarText','Enter the sidebar text for thsi page'));
+
+            return $fields;
+        }
+
+  
+        
+}
+class Page_Controller extends ContentController {
+
+	private static $allowed_actions = array (
+	);
+
+	public function init() {
+		parent::init();
+            Requirements::javascript('mysite/javascript/jquery-1.11.0.min.js');
+            Requirements::javascript('mysite/javascript/jquery.sidr.min.js');                
+            Requirements::javascript('mysite/javascript/site.js');
+	}
+
+}

@@ -1,0 +1,578 @@
+/* 
+    Document   : AK Expressions
+    Created on : 13-Jan-2015, 15:09:43
+    Author     : Adrian L
+*/ 
+
+#sidr, .mobile {display:none;}
+
+h1,h2,h3,h4,h5 {
+    font-family:"museo-sans", arial, sans-serif;
+    font-weight:900;
+}
+
+h1 {
+    font-size:4rem;
+}
+p {
+    font-size:1.4rem;
+    line-height:1.4;
+}
+/*---------------------- homepage slider----------------------------*/
+
+.sliderBox {
+    position: relative;
+    float:left;
+    width:48.7883%;
+    margin:.5%;
+}
+.sliderBox:before{
+    content: "";
+    display: block;
+    padding-top: 96.1%; 
+}
+/*---------------------- homepage boxes ----------------------------*/
+
+.box{
+    position: relative;
+    width: 23.9%;	
+    margin:.5%;
+    color:silver;
+    float:left;        
+}
+
+.box p {padding:6%;}
+
+.box:before{
+    content: "";
+    display: block;
+    padding-top: 100%; 
+}
+
+.box img, .sliderBox.static img {width:100%;height:auto;}
+
+/* slider box static is the box that doesn't contain the slider... the sizes are the same though */
+
+.content{
+    /* this is within the box--*/
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.headerPanel {
+    margin-top:12px;
+}
+
+.logo img {
+    width:65%;
+    height:auto;
+}
+
+.contactDetails img {
+    width:100%;
+    height:auto;
+    padding-top:10%;
+}
+
+/*------------------------ homepage box icons--------------------------*/
+.box img.icon{*height: 0;}
+
+.box img.icon  {
+    text-decoration:none;
+    display: block;
+    width: 50%;
+    height: auto; 
+    margin: -20px 0 0; 
+    position: absolute; 
+    top: 35%;
+    opacity:1;
+    z-index: 10;
+    overflow: hidden;
+    /*opacity: 0; */
+    -webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease;
+    left: 25%;
+}
+/*----------the social media boxes---------------------------*/
+
+.box .subBox {
+    width:48%;
+    float:left;
+    margin-bottom:2%;
+}
+
+.box .subBox.one {
+    margin-right:4%;
+}
+
+.box:hover {cursor:pointer;}
+
+.box:hover img.boxBg, .box .subBox:hover img {opacity: 0.84; }
+
+.sliderBox img.icon {
+    text-decoration:none;
+    display: block;
+    width: 35%;
+    height: auto; 
+    margin: -20px 0 0; 
+    position: absolute; 
+    top: 40%; 
+    z-index: 10;
+    overflow: hidden;
+    opacity: 0; 
+    -webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease; 
+    left: -90px;    
+}
+
+.box.textBox a {color:silver;font-size:1.4em;}
+.sliderBox:hover {cursor:pointer;}
+.sliderBox:hover img.icon {opacity: 1; left: 35%; }
+
+
+/*------------------------------------gallery page stuff-------------------------------*/
+
+
+.galleryBox.giant {
+    position: relative;
+    float:left;
+    width:64.7883%;
+    margin:.5%;
+}
+.galleryBox.giant:before{
+    content: "";
+    display: block;
+    padding-top: 98.2%; 
+}
+.galleryBox.giant.right {
+    float:right;
+    margin-left:0;
+    margin-right:1.5%;
+}
+
+.galleryBox{
+    position: relative;
+    width: 31.976%;	
+    margin:.5%;
+    color:silver;
+    float:left;        
+}
+
+.galleryBox p {padding:6%;}
+
+.galleryBox:before{
+    content: "";
+    display: block;
+    padding-top: 100%; 
+}
+
+.galleryBox.position-10, body.EndorsementsGallery .galleryBox.position-8 {clear:left;}
+
+.galleryBox img {width:100%;height:auto;}
+.galleryBox img:hover {opacity:0.9;}
+body.ImageGallery .galleryBox img:hover {opacity:1;}
+
+
+
+.galleryBox .imgSocial  {
+    position:absolute;
+    bottom:10px;
+    left:20px;
+    opacity:0;
+     -webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease;
+   
+}
+
+.galleryBox .imgSocial img {
+    float:left;
+    width:auto;
+    height:30px;
+    margin-right:4px;
+    opacity:0.8;
+}
+.galleryBox .imgSocial img:hover {
+    opacity:1;
+}
+
+.galleryBox:hover .imgSocial {
+    opacity:1;
+}
+
+.galleryBox.giant img.galleryIcon {
+    position:absolute;
+    top:40%;
+    left:35%;
+    width:30%;
+    height:auto
+}
+.galleryBox img.galleryIcon {
+    position:absolute;
+    top:30%;
+    left:25%;
+    width:50%;
+    height:auto
+}
+img.galleryIcon:hover {
+    opacity:0.9;
+}
+
+/*------------------------ gallery box icons--------------------------*/
+.galleryBox img.icon{*height: 0;}
+
+.galleryBox img.icon  {
+    text-decoration:none;
+    display: block;
+    width: 50%;
+    height: auto; 
+    margin: -20px 0 0; 
+    position: absolute; 
+    top: 35%;
+    opacity:1;
+    z-index: 10;
+    overflow: hidden;
+    /*opacity: 0; */
+    -webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease;
+    left: 25%;
+}
+/*--------------------------------video boxes-----------------------------*/
+.videoBox {
+    width:49%;
+    float:left;
+    padding:0.5%;
+}
+.videoBox iframe, .videoBox object, .videoBox embed {
+    width:100%;
+}
+/*---------------------------------customer galleries-----------------------------------*/
+.customerGalleryImage {
+    width:23.5%;
+    padding:0.2% 0.6%;
+    position:relative;
+    float:left;
+    overflow:hidden;
+}
+.customerGalleryImage img {
+    width:100%;
+    height:auto;
+}
+.customerGalleryImage .headerBackground {
+    background:rgba(255,0,0,0.4);
+    width:95%;
+    position:absolute;
+    bottom:10px;
+    padding-top:10px;
+}
+.customerGalleryImage h2 {
+    font-size:1.4em;
+    color:white;
+    text-align:center;
+    text-shadow:2px 2px 5px black;
+}
+
+.disallowedGalleryAccess {
+    margin-top:90px;
+    height:300px;
+    background:red;
+    text-align:center;
+}
+.disallowedGalleryAccess h2 {color:white;padding-top:100px;}
+/*----------------------------------- blog, content pages etc ------------------------------------------------*/
+.textBasedPage {
+    margin-top:30px;
+    padding:0 4%;
+}
+.ImageBasedPage {
+    margin-top:20px;
+}
+.rightBar img.blog {width:100%; height:auto;}
+/*------------------ sidebar/subnavs ----------------------------*/
+.sideBar {padding-top:30px;}
+.sideBar h1 a{
+    font-size:1.8em;
+    color:red;
+    text-transform:uppercase;
+}
+#subNav ul li ul {padding:0;margin:0;}
+#subNav ul li ul li {
+    list-style-type:none;
+    border-bottom:1px solid silver;
+    margin:0;
+    padding:4px;
+}
+#subNav ul li ul li.last {border-bottom:0;}
+#subNav ul li ul li img {
+    float:left;
+    padding:3px 8px 0 0;
+}
+#subNav ul li ul li a {
+    font-family: "museo-sans", arial, sans-serif;
+    font-weight:300;
+    color:black;
+    font-size:1.2em;
+    text-decoration:none;
+    display:block;
+    margin:0 0 6px 0;
+    padding:8px 0px 0px 4px;
+}
+
+#subNav ul li ul li.current {background:silver}
+
+#subNav ul li ul li a:hover, #simpleNav ul li a:hover, a.galleryTop:hover {
+    color:silver;
+}
+
+#subNav ul li ul li.current a:hover {
+    color:white;
+} 
+#subNav ul li {
+    border-bottom:none;
+    margin-bottom:4px;
+}
+#subNav ul li a, a.galleryTop {
+    font-family: "museo-sans", arial, sans-serif;
+    font-weight:900;
+    text-transform:uppercase;
+    font-size:1.5em;
+    text-decoration:none;    
+    color:black;
+    margin:0 ;
+    padding:4px 0px 2px ;    
+}
+#subNav ul li a.current,#subNav ul li a.section  {color:red;}
+/*#simpleNav ul li a.current, a.galleryTop.current {color:red;}*/
+
+.socialGeneric {padding:10px 0;margin-bottom:20px;height:auto;}
+
+.socialGeneric img {
+    width:23.5%;
+    margin-right:2%;
+    height:auto;
+    float:left;    
+}
+.socialGeneric .last img {
+    margin-right:0;
+}
+.socialGeneric img:hover {
+    opacity:0.9;
+}
+/*----------------------------------footer stuffs-------------------------------*/
+.footerPeople img {
+    width:100%;
+    height:auto;
+    padding-top:3%;
+}
+
+.footer {padding:10px 0;}
+
+.footer p {text-align:right;padding-right:2%}
+
+.footer span a {color: #808080;}
+.footer span a:hover {color:silver;}
+p.subFooter  {color:grey;font-size:1.2rem;text-align:right; padding-right:2%;}
+
+.footer .social img {
+    width:16%;
+    margin-right:2%;
+    height:auto;
+    float:left;
+}
+
+.footer .social img:hover {
+    opacity:0.8
+}
+
+.footer .colophon {
+    padding-top:10px;
+}
+
+/*------------------------------------- widgets and stuff -------------------------------*/
+#twitter-widget-0 { 
+      width: 100% !important; 
+}
+
+.widget {
+margin-top:16px;
+    
+}
+.widget h3 {
+    font-size:2em;
+    margin-bottom:10px;
+}
+@media screen and (max-width: 860px) {
+   /* at this point we use the mobile design */
+}
+
+/*--------------------------------------blog ----------------------------------------------*/
+img.left {
+    float:left;
+    padding-right:20px;
+}
+.hfeed img {
+    float:right;
+    width:34%;
+    padding-left:3%;
+    height:auto;
+}
+.hfeed h1, .hfeed h2 {
+    margin:0 0 8px;;
+}
+.hfeed h1 a, .hfeed h2 a {
+    color:black;
+}
+.hfeed h1 {
+    font-size:1.8em;
+    font-weight:700;
+}
+.hfeed h2 {
+    font-size:1.2em;
+    font-weight:700;
+}
+.hfeed h1 a:hover, .hfeed h2 a:hover {
+    color:silver;
+}
+ol, ul {list-style-type:none}
+
+p.authorDate {color:silver;}
+
+.hentry.bigBoy {
+    padding-bottom:20px;
+    margin-bottom:20px;
+    border-bottom:1px solid silver;
+}
+
+.hentry.twin {
+    width:48%;
+    float:left;
+    margin-right:4%;
+}
+.hentry.twin img {
+    width:50%;
+}
+.hentry.twin.odd {
+    margin-right:0;
+}
+.twinDivider {
+    clear:left;
+    height:20px;
+    margin-bottom:20px;
+    border-bottom:1px solid silver;
+}
+
+.hentry.twin p.readMore img, p.readMore img {
+    height:28px;
+    width:auto;
+    float:left;
+    padding-left:4px;
+}
+p.readMore img.first {
+    padding-left:0;
+}
+p.readMore img:hover {
+    opacity:0.8;
+}
+.hentry.peopleSay {
+    border-bottom:1px solid silver;
+    padding:4% 0;
+}
+
+.hentry.peopleSay.last {
+    border-bottom:0;
+}
+
+.hentry.peopleSay img.peopleSayImage {
+    width:25%;
+    padding-bottom:4%;
+}
+/*-----------------------------------forms------------------------------------*/
+input[type="text"],textarea {
+    width:50%;
+    background:#f6f6f6;
+}
+
+
+
+/* For devices larger than 400px  consider this the phone */
+@media (min-width: 300px) and (max-width:550px) {
+    .mobile{display:block;}
+    .desktop{display:none;}
+    
+    .container {width: 96%;padding: 0;}
+    .box, .galleryBox, .galleryBox.giant, .galleryBox.giant.right, .customerGalleryImage{width:47%;padding:1%;float:left;margin:0 1% 1% 0;}
+    .box img.icon {width:65%;left:20%;top:30%;}
+    .galleryBox img.galleryIcon, .galleryBox.giant img.galleryIcon{width:65%;left:20%;top:20%;}
+    .galleryBox.position-10, body.EndorsementsGallery .galleryBox.position-8 {clear:none;}
+    .galleryBox .imgSocial {opacity:1;}
+    .galleryBox .imgSocial img {height:20px;}   
+    .videoBox {width:100%;}
+    
+
+    .contactDetails img {display:none;}
+    .logo img {width:85%;display:block;margin:0 auto 10px;}
+    .footer .social img {width:24%;margin-right:1.2%;}
+    .footer .social.last img {margin-right:0;}
+    .footer {padding-top:0;}
+    .colophon.mobile {background:black;margin-top:1.5%;}
+    .colophon.mobile p {background:black;color:white;text-align:center;}
+    .colophon.mobile p a {color:silver;}
+    .sideBar {display:none;}
+    #mobileNav {padding-top:2%;}
+    #mobileNav a {width:44%;border-right:2px solid white;font-weight:900;color:white;background:red;display:block;float:left;padding:2% 0; text-align:center;}
+    #mobileNav a.menuButton {width:10%;background:white;}
+    #mobileNav {position:fixed;top:0;width:96%;background:white;z-index:99;}
+    .headerPanel {margin-top:60px;}
+    
+    input[type="text"],textarea {width:100%;background:#f6f6f6;}    
+    #subNav.sidrNav ul li a{
+        padding-left:5%;
+        font-size:1.2em;
+    }    
+}
+
+
+
+@media (min-width:550px) and (max-width: 700px) {
+        .container {width:90%;}  
+        
+        .box.textBox p {
+            font-size:0.8em;
+        }        
+        .six.columns.logo, .six.columns.contactDetails {
+            width:100%;
+            margin-left:0;
+        }
+        .six.columns.logo img {
+            width:90%;
+            display:block;
+            margin:0 auto;            
+        }
+        .contactDetails img {
+            width:80%;
+            display:block;
+            padding-top:0%;
+            margin:0 auto 10px;
+        }
+        #subNav ul li ul li {font-size:0.8em;padding:0px 4px;}
+        #subNav ul li a  {font-size:0.9em;}
+        
+        #subNav img {width:20%;height:auto;}
+
+}
+
+@media (min-width:701px) and (max-width: 900px) {
+    .box.textBox p {
+            font-size:0.8em;    
+            color:green;
+     }   
+    .flex-direction-nav .flex-prev { opacity: 1; left: 10px;}
+    .flex-direction-nav .flex-next { opacity: 1; right: 10px;}
+    .container {width:98%;}  
+        .six.columns.logo img, .six.columns.contactDetails img {
+            width:80%;
+        }
+        .six.columns.contactDetails img {
+            margin-top:3%;
+            width:100%;
+        }         
+  
+}
